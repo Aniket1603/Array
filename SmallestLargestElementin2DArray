@@ -1,0 +1,63 @@
+
+package arrays;
+import java.util.*;
+public class SmallestLargestElementin2DArray  {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter the row");
+        int n= scan.nextInt();
+         System.out.println("enter the colom");
+        int m= scan.nextInt();
+        int ar[][] = new int[n][m];
+         System.out.println("enter the element");
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                ar[i][j] = scan.nextInt();
+            }
+    }
+        
+        int max = ar[0][0];
+        
+        
+       for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                if(max < ar[i][j])
+                {
+                    max = ar[i][j];
+            }
+            
+    } 
+        
+            
+        
+        
+    }
+        System.out.println("Largest element is "+ max);
+        
+         int small = ar[0][0];
+        
+        
+       for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                if(small > ar[i][j])
+                {
+                    small= ar[i][j];
+            }
+            
+    } 
+        
+            
+        
+        
+    }
+       System.out.println("Smallest element is "+ small);  
+        
+        
+}
+}
